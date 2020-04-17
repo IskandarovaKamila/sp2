@@ -4,8 +4,8 @@ RUN apt update && apt install bash && apt install git -y && apt install build-es
 
 WORKDIR /home/script/
 
-RUN git clone https://github.com/IskandarovaKamila/sp3.git \
-	&& cd sp3/ \
-	&& gcc -fno-pie -no-pie 3laba.cpp -o lab3 -g -lstdc++
+RUN git clone https://github.com/IskandarovaKamila/sp2.git \
+	&& cd sp2/ \
+	&& gcc -m32 hello,world.s -o hello
 
-WORKDIR /home/script/sp3/
+WORKDIR /home/script/sp2/
