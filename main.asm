@@ -4,8 +4,7 @@ public _start
 ;(64)rax = (32)eax = (16)ax = (8)ah|al(8)
 
 section '.data' writable
-	; Array 		db 17, -41, 71, 123, 2, -23, -17, 42, 73, -60
-	Array 		db 24, 17, 71, 98, 3, 45, 76, 8, 11, 9
+	Array 		db 2, 87, 23, 18, 32, 4, 16, 38, 17, 92
 	n 		= $-Array
 	new_line 	equ 0xA						; пустая строка
 	msg 		db "Исходный массив:        Преобразованный массив:", new_line, 0		; 0 - конец строки
